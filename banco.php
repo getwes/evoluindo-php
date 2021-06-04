@@ -1,7 +1,11 @@
 <?php
 
 include 'funcoes.php';
+//include//
+//require//
+//require_once//
 
+//------------//
 $contasCorrentes = [
     '123.456.789-10' => [
         'titular' => 'Maria',
