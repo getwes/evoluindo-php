@@ -60,5 +60,9 @@ $contasCorrentes['123.456.789-11'] = sacar(
     200
 );
 foreach ($contasCorrentes as $cpf => $conta) {
-    exibeMensagem($cpf . " " . $conta['titular'] . ' ' . $conta['saldo']);
-}
+
+    foreach ($contasCorrentes as $cpf => $conta) {
+        exibeMensagem(
+            "$cpf {$conta['titular']} {$conta['saldo']}"
+        );
+    }
