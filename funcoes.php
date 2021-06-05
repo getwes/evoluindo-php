@@ -21,11 +21,10 @@ function depositar(array $conta, float $valorADepositar): array {
         exibeMensagem("Depósitos precisam ser positivos");
     }
 
-    function titularcomletrasmaiuscula(array $conta)
+    function titularcomletrasmaiuscula(array & $conta)
     {
-        echo $conta['titular'] . "\n";
        $conta['titular']= strtoupper($conta['titular']);
     }
 
     //return $conta;
-//}
+}
