@@ -44,7 +44,8 @@ $contasCorrentes['123.456.789-11'] = sacar(
 titularcomletrasmaiuscula($contasCorrentes['123.256.789-12']);
 
     foreach ($contasCorrentes as $cpf => $conta) {
+        ['titular' => $titular, 'saldo' => $saldo] = $conta;
         exibeMensagem(
-            "$cpf {$conta['titular']} {$conta['saldo']}"
+            "$cpf $titular $saldo"
         );
     }
