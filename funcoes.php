@@ -27,7 +27,7 @@ function depositar(array $conta, float $valorADepositar): array {
 
     function exibeconta(array $conta){
         ['titular' => $titular, 'saldo' => $saldo] = $conta;
-        echo  "<li>titular: $titular. saldo: {$saldo}</li>";
+        echo  "<li>titular: $titular. saldo: $saldo</li>";
     }
 
     return $conta;
