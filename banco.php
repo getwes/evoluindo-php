@@ -31,6 +31,9 @@ $contasCorrentes['123.256.789-12'] = depositar(
     900
 );
 
+//serve para excluir certos dados das variaveis
+//unset($contasCorrentes['123.456.789-11']);
+
 
 $contasCorrentes['123.456.789-10'] = sacar(
     $contasCorrentes['123.456.789-10'],
@@ -43,9 +46,8 @@ $contasCorrentes['123.456.789-11'] = sacar(
 );
 titularcomletrasmaiuscula($contasCorrentes['123.256.789-12']);
 
+echo "<ul>";
     foreach ($contasCorrentes as $cpf => $conta) {
-        ['titular' => $titular, 'saldo' => $saldo] = $conta;
-        exibeMensagem(
-            "$cpf $titular $saldo"
-        );
+        exibeconta ($conta);
     }
+    echo "</ul>";
