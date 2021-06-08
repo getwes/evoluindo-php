@@ -2,8 +2,13 @@
 
 include 'funcoes.php';
 //include//
+//inclui e avalia o arquivo informado
+------------
 //require//
+//a função require() importa arquivos, porém, caso o mesmo não seja encontrado, será levantado uma exceção e a execução é finalizada. 
+-----------
 //require_once//
+//A declaração require_once é idêntica a requirem exceto que o PHP verificará se o arquivo já foi incluído, e em caso afirmativo, não o incluirá (exigirá) novamente.
 
 //------------//
 $contasCorrentes = [
